@@ -1,0 +1,200 @@
+/* homepage.css */
+html {
+    height: 100%;
+    width: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: proximanovaregular, sans-serif;
+}
+.scrollable-container {
+    height: 100vh; 
+    overflow: auto; 
+  }
+  
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(248, 248, 255, 0.7), rgba(0, 114, 206, 0.7)), url('images/home.png');
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navbar {
+    height: 12%;
+    display:flex;
+    align-items: center;
+    padding-top: 20px;
+
+}
+
+.logo{
+    width: 300px;
+    cursor: pointer;
+}
+
+.usericon{
+    width: 50px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #2a71b9;
+    font-size: 13px;
+}
+
+/* PAGE 1 */
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+
+}
+
+h1{
+    color: #0f487c;
+    font-size: 80px;
+}
+
+p{
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 15px;
+    margin-top: 20px;
+    font-family: proximanovaregular, sans-serif;
+    font-weight: 150;
+}
+
+button{
+    width: 180px;
+    color: #0f487c;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #ffffff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    color: white;
+    transition: transform 0.5s;
+
+    background-position: center;
+    background-size: cover;
+}
+
+.card1{
+    background-image: linear-gradient(rgba(0, 113, 206, 0.662), rgba(255, 255, 255, 0.284)), url('images/deca1.PNG');
+}
+
+.card2{
+    background-image: linear-gradient(rgba(0, 114, 206, 0.7), rgba(255, 255, 255, 0.3)), url('images/deca2.jpeg');
+}
+.card3{
+    background-image: linear-gradient(rgba(0, 114, 206, 0.7), rgba(255, 255, 255, 0.3)), url('images/deca3.JPG');
+}
+.card4{
+    background-image: linear-gradient(rgba(0, 114, 206, 0.7), rgba(255, 255, 255, 0.3)), url('images/deca4.JPG');
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+h5{
+    text-shadow: 0 0 5px #999;
+}
+
+.card p{
+    font-size: 11px;
+}
+
+/* PAGE 2 */
+.container2 {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(248, 248, 255, 0.7), rgba(0, 114, 206, 0.7)), url('images/home2.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.title2 {
+    padding-top: 30px;
+}
+
+footer{
+    background: white;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin: 1.4rem;
+}
+
+.social-links a{
+    border: 2px solid #2a71b9;
+    color: #2a71b9;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover{
+    background: #78ade2;
+    color: var(--exDark);
+}
+
+.copyright {
+    margin-top: 1rem;
+    display: block;
+    font-family: proximanovabold, sans-serif;
+    letter-spacing: 2px;
+    color:#2a71b9;
+}

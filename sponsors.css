@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: proximanovaregular, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(248, 248, 255, 0.7), rgba(0, 114, 206, 0.7)), url('../images/sponsors-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+}
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.logo {
+    width: 300px;
+    cursor: pointer;
+}
+
+.usericon {
+    width: 50px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2a71b9;
+    font-size: 13px;
+}
+
+.sponsors-content {
+    padding-top: 50px;
+}
+
+h1 {
+    color: #2a71b9;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sponsors-content > p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.sponsor-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #0f487c;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sponsor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sponsor-card img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.sponsor-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sponsor-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+footer{
+    background: white;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin: 1.4rem;
+}
+
+.social-links a{
+    border: 2px solid #2a71b9;
+    color: #2a71b9;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover{
+    background: #78ade2;
+    color: var(--exDark);
+}
+
+.copyright {
+    margin-top: 1rem;
+    display: block;
+    font-family: proximanovabold, sans-serif;
+    letter-spacing: 2px;
+    color:#2a71b9;
+}

@@ -1,0 +1,81 @@
+/* roleplay.css */
+@import url('member.css');
+
+main {
+    align-items: center;
+    padding: 2rem 10%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+.folder-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+}
+
+.folder {
+    background-color: #f0f8ff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.folder h2 {
+    color: #2a71b9;
+    margin-bottom: 1rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: #0f487c;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+.card .tag {
+    display: inline-block;
+    background-color: #2a71b9;
+    color: #ffffff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.card h3 {
+    font-size: 1rem;
+}
+
+@media (max-width: 1200px) {
+    .folder-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .folder-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,340 @@
+/* homepage.css */
+html {
+    height: 100%;
+    width: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primary-color: #2a71b9;
+    --secondary-color: #f8f9fa;
+    --accent-color: #ffc107;
+    --text-color: #333;
+}
+
+.scrollable-container {
+    height: 100vh; 
+    overflow: auto; 
+}
+  
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(248, 248, 255, 0.7), rgba(0, 114, 206, 0.7)), url('../images/home.png');
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.logo{
+    width: 300px;
+    cursor: pointer;
+}
+
+.usericon{
+    width: 50px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 13px;
+}
+
+.banner {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 50%;
+    background: linear-gradient(rgba(0, 86, 179, 0.8), rgba(0, 86, 179, 0.6));
+    padding: 4rem 0;
+}
+
+.banner2 {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+
+.banner-title {
+    font-size: 3.5rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.banner-title span{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.banner p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    word-spacing: 2px;
+    color: rgb(255, 255, 255);
+}
+
+.search-container {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.search-input{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.search-input::placeholder {
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-btn{
+    width: 40px;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    border: none;
+    background: var(--accent-color);
+    outline: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* News section */
+.news{
+    background: rgba(0, 114, 206, 0.7);
+    padding: 4.5rem 0;
+    text-align: center;
+}
+
+.newstitle h2{
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+    color: #ffffff;
+    text-align: center;
+}
+
+.newstitle p {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+.news-content {
+    padding: 20px;
+    margin: 2rem 0;
+    max-height: 10000px;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news-item {
+    margin: 10px;
+    border: 3px solid var(--primary-color);
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    margin-right: 20px;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+}
+
+.news-img {
+    position: relative;
+    height: 400px;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    padding-left: 30x;
+}
+
+.news-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-img span{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--primary-color);
+    color: white;
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+}
+
+.news-text {
+    margin: 2.2rem 0;
+    padding: 0 1.5rem;
+}
+
+.news-text span{
+    font-weight: 300;
+    display: block;
+    padding-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.news-text h2{
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem 0;
+    font-size: 1.65rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.news-text p{
+    font-weight: 300;
+    font-size: 1.2rem;
+    opacity: 0.9;
+    padding-bottom: 1.2rem;
+    color: #666;
+}
+
+.news-text a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.55rem 1.2rem;
+    transition: all 0.5s ease;
+    border-radius: 4px;
+}
+
+.news-text a:hover{
+    background: #004494;
+}
+
+/* Footer */
+footer{
+    background: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin: 1.4rem;
+}
+
+.social-links a{
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover{
+    background: #78ade2;
+    color: var(--text-color);
+}
+
+.copyright {
+    margin-top: 1rem;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 768px){
+    .banner-title{
+        font-size: 2.5rem;
+    }
+    .search-container{
+        width: 90%;
+    }
+    .news-content{
+        justify-content: center;
+    }
+    .news-item{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .news-content{
+        justify-content: space-around;
+    }
+    .news-item{
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .news-content{
+        justify-content: space-between;
+    }
+    .news-item{
+        width: 30%;
+    }
+}
